@@ -279,19 +279,9 @@ class ViewController: UIViewController {
 
     func secondCheckButtonTapped() {
         secondCheckButton.isSelected.toggle()
-
-        var updatedConfig = secondCheckButton.configuration
-        updatedConfig?.baseBackgroundColor = .green.withAlphaComponent(0.3)
-        secondCheckButton.configuration = updatedConfig
     }
     func thirdCheckButtonTapped() {
         thirdCheckButton.isSelected.toggle()
-
-        thirdCheckButton.configurationUpdateHandler = { button in
-            var updatedConfig = button.configuration
-            updatedConfig?.baseBackgroundColor = .green.withAlphaComponent(0.3)
-            button.configuration = updatedConfig
-        }
     }
 
     func firstPlayButtonTapped() {}
